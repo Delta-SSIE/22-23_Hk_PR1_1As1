@@ -1,0 +1,18 @@
+using System;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Josef Horálek");
+            Console.WriteLine("Josef");
+            Console.WriteLine("Horálek");
+            Console.WriteLine("Josef");
+            Console.WriteLine();
+            Console.WriteLine("Horálek");
+            Console.ReadKey();
+        }
+    }
+}
