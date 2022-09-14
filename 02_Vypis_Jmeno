@@ -12,7 +12,7 @@ namespace ConsoleApp1
             Console.WriteLine("Josef");
             Console.WriteLine();
             Console.WriteLine("Horálek");
-            Console.ReadKey();
+            Console.ReadKey(); // čeká na stisk klávesy
         }
     }
 }
