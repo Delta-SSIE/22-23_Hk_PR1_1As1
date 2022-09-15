@@ -1,0 +1,33 @@
+using System;
+
+namespace _04_Nacti_vypis_jmeno
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Zadej kresní jméno");
+            string jmeno = Console.ReadLine();
+            Console.WriteLine("Zadej příjmení");
+            string prijmeni = Console.ReadLine();
+
+            Console.Clear(); // vyčistí okno konzole
+            string vystup = jmeno; // do proměnné vystup přidá hodnotu proměnné jmeno
+            vystup = vystup + prijmeni;// do proměnné vystup přidá hodnotu proměnné prijmení
+            
+            /* Hezčí výpis s mezerou
+            string vystup = "Jmenuji se: "+jmeno + " " + prijmeni;
+            */
+            Console.WriteLine(vystup);
+
+            /* Jiné možnosti výpisu do konzole
+            Console.WriteLine("Jmenuji se: " + jmeno + " " + prijmeni.);
+            Console.WriteLine("Jmenuji se: {0} {1}.", jmeno, prijmeni);
+            Console.WriteLine($"Jmenuji se: {jmeno} {prijmeni}.");
+            */
+
+            Console.ReadKey();
+
+        }
+    }
+}
