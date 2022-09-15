@@ -8,7 +8,8 @@ namespace _05_Retezec_obsahuje
         {
             string text = "Delta je nejlepsi skola na IT v ČR.";
             Console.WriteLine(text);
-            Console.WriteLine("Zaciná text retezcem ´krok´? "+text.StartsWith("krok"));
+            Console.WriteLine("Zaciná text retezcem ´delta´? "+text.StartsWith("delta"));
+            Console.WriteLine("Zaciná text retezcem ´Delta´? "+text.StartsWith("Delta"));
             Console.WriteLine("Končí text ´.´? " + text.EndsWith("."));
             Console.WriteLine("Obsahuje text retezcem ´skol´? " + text.Contains("skol"));
             Console.WriteLine("Obsahuje text retezcem mezeru? "+text.Contains(" "));
