@@ -1,0 +1,37 @@
+using System;
+
+namespace _06_Velka_mala_pismena
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string vlastnosti = "Fullscreen shaDows autosave";
+            Console.WriteLine($"Původní text: {vlastnosti}");
+            vlastnosti = vlastnosti.ToLower();
+            Console.WriteLine($"Použití metody ToLower: {vlastnosti}");
+            Console.WriteLine("Poběží hra ve fullscreenu?");
+            Console.WriteLine(vlastnosti.Contains("fullscreen"));
+            Console.WriteLine("Budou zapnuté stíny?");
+            Console.WriteLine(vlastnosti.Contains("shadows"));
+            Console.WriteLine("Přeje si hráč vypnout zvuk?");
+            Console.WriteLine(vlastnosti.Contains("nosound"));
+            Console.WriteLine("Přeje si hráč hru automaticky ukládat?");
+            Console.WriteLine(vlastnosti.Contains("autosave"));
+            Console.ReadKey();
+
+            Console.Clear();
+            string skola = "Skola Delta je ProtSte Super";
+            Console.WriteLine($"Původní text: {skola}");
+            skola = skola.ToUpper();
+            Console.WriteLine($"Použití metody ToUpper: {skola}");
+            Console.WriteLine("Jmenuje se skola DELTA?");
+            Console.WriteLine(skola.Contains("DELTA"));
+            Console.WriteLine("Je skola Delta SUPER?");
+            Console.WriteLine(skola.Contains("SUPER"));
+            Console.WriteLine("Máme pripomínky ke skole?");
+            Console.WriteLine(skola.Contains("skol"));
+            Console.ReadKey();
+        }
+    }
+}
