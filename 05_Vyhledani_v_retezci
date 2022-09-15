@@ -1,0 +1,19 @@
+using System;
+
+namespace _05_Retezec_obsahuje
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string text = "Delta je nejlepsi skola na IT v ČR.";
+            Console.WriteLine(text);
+            Console.WriteLine("Zaciná text retezcem ´krok´? "+text.StartsWith("krok"));
+            Console.WriteLine("Končí text ´.´? " + text.EndsWith("."));
+            Console.WriteLine("Obsahuje text retezcem ´skol´? " + text.Contains("skol"));
+            Console.WriteLine("Obsahuje text retezcem mezeru? "+text.Contains(" "));
+            Console.WriteLine("Obsahuje text retezcem ´hor´? "+text.Contains("hor"));
+            Console.ReadKey();
+        }
+    }
+}
