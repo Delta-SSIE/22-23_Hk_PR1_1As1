@@ -1,0 +1,26 @@
+using System;
+
+namespace _07_Nactení_Jmena
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Zadej své křestní jméno:"); // Výzva uživateli k zadaní jména - hodnoty proměnné
+            string jmeno;   // definuji proměnou jmeno datového typu string
+            jmeno = Console.ReadLine(); // naplnění proměné jméno hodnotou zadanou v konzoli
+            Console.WriteLine("Zadej své přijmení");
+            string prijmeni;
+            prijmeni = Console.ReadLine();
+
+            string cele_jmeno = "Mé celé jméno je: ";
+            cele_jmeno = cele_jmeno + jmeno;
+            cele_jmeno = cele_jmeno + " ";
+            cele_jmeno = cele_jmeno + prijmeni;
+            Console.WriteLine(cele_jmeno); // výpis proměnné - BEZ UVOZOVEK
+            Console.WriteLine(jmeno+prijmeni); // výpis proměnné - BEZ UVOZOVEK
+            Console.WriteLine(jmeno+" "+prijmeni); // výpis proměnné - BEZ UVOZOVEK
+            Console.ReadKey();  // program čeká na stisk libovoné klávesy - používámě pro pozdržení programu
+        }
+    }
+}
