@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+
+namespace Spojový_seznam
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            // inicializace a naplnění spojového seznamu
+            LinkedList<int> seznam = new LinkedList<int>();
+            seznam.AddLast(1);
+            seznam.AddLast(2);
+            seznam.AddLast(3);
+            seznam.AddLast(4);
+            seznam.AddLast(5);
+
+            foreach (int i in seznam)
+                Console.Write("{0}, ", i);
+
+            Console.WriteLine();
+
+            // přidávání a mazání v prostředku seznamu
+            LinkedListNode<int> prostredni = seznam.Find(4);
+            seznam.AddAfter(prostredni, 106);
+            //seznam.AddAfter(prostredni, 31);
+           // seznam.Remove(prostredni);
+
+            // výpis seznamu
+            foreach (int i in seznam)
+                Console.Write("{0}, ", i);
+
+            Console.ReadKey();
+        }
+    }
+}
