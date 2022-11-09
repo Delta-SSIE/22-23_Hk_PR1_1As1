@@ -1,0 +1,7 @@
+Úkol 1: Napiště program, který vygeneruje a vypíše 30 čísel jehož dolní a hodní mez zadá uživatel (pokuste se zajistit, aby dolní mez byla < než horní mez)
+Úkol 2: Program z úkolu 1 rozšiřte o uživatelské zadání počtu generovaných čísel
+Úkol 3: Zjistěte kolikrát se ve vygerovaných číslem úkolu 2 nachází hodnota 0
+Úkol 4: Zjistěte kolikrát se ve vygerovaných číslem úkolu 2 nachází hodnota rovná dolní mezi generování
+Úkol 5: Zjistěte kolikrát se ve vygerovaných číslem úkolu 2 nachází hodnota rovná horní mezi generování
+Úkol 6: Program z úlohy 5 rozšiřte o celkový součet vygenerovaných hodnot
+Úloha 7: Program z úlohy 6 rozšiřte o nalezení minimální vygenerované hodnoty (tedy jaké nejmenší číslo bylo vygenerováno)
