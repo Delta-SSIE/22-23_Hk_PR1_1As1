@@ -11,8 +11,16 @@ namespace _34_Kolik_hodnot
             Console.WriteLine("Pro start programu stikni Enter");
             Console.ReadKey();
             Console.Clear();
-            Console.WriteLine("Zadej hledané číslo");
-            int cislo = int.Parse(Console.ReadLine());
+            int cislo;
+            bool cislo_ok = true;
+            do
+            {
+                Console.WriteLine("Zadej hledané číslo v intervalu <-5; 5>");
+                cislo = int.Parse(Console.ReadLine());
+                if (cislo <= 5 && cislo >= -5)
+                    cislo_ok = false;
+            } while (cislo_ok);
+
             int pocet_generovani = 0;
             int pocet_shod = 0;
             while (pocet_generovani < 20)
