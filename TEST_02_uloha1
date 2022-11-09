@@ -1,0 +1,34 @@
+using System;
+
+namespace _33_Soucet_Test01
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Random generator = new Random();
+            Console.WriteLine("Program vygeneruje náhodná číslo v intervalu <0, 9> až dokud nedosáhne čísla rovného nebo většího součtu, než je požadovaná hodnota.");
+            Console.WriteLine("Program bude jednotlivá vygenerovaná čísla vypisovat do jednoho řádku");
+            Console.WriteLine("Program vypíše, kolik čísel musel vygenerovat");
+            Console.WriteLine("Program spustíš stiskem Enter");
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("Zadej celkový součet");
+            int vstup = int.Parse(Console.ReadLine());
+            int cislo = generator.Next(0, 10);
+            int soucet = 0;
+            int pocet = 0;
+            Console.WriteLine("Vygenerovaná čísla:");
+            while (soucet < vstup)
+            {
+                cislo = generator.Next(0, 10);
+                Console.Write(" " + cislo + " ");
+                soucet = soucet + cislo;
+                pocet++;
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Vygeneroval jsem celkem {pocet} čísel, jejichž součet {soucet} <= {vstup}");
+            Console.ReadKey();
+        }
+    }
+}
