@@ -14,6 +14,7 @@ namespace _36_soucet_dokola
             int horni_mez;
             while (!int.TryParse(Console.ReadLine(), out horni_mez))
                 Console.WriteLine("Neplatný znak, zadejte prosím horní mez jako celé číslo:");
+            
             bool dalsi = true;
             while (dalsi)
             {
@@ -24,7 +25,7 @@ namespace _36_soucet_dokola
                 soucet = soucet+a;
                 pocet++;
                 if (soucet > horni_mez)
-                    dalsi = false;
+                    break;
             }
             Console.WriteLine($"Tvůj celkový součet zadaných {pocet} cifer je {soucet}.");
             Console.ReadKey();
