@@ -1,0 +1,25 @@
+namespace _43_for_lahve
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            for (int i = 10; i > 0; i--)
+            {
+                string tvar = "zelených láhví";
+                if ((i > 1) && (i < 5))
+                {
+                    tvar = "zelené láhve";
+                }
+                if (i == 1)
+                {
+                    tvar = "zelená láhev";
+                }
+                Console.WriteLine(i + " " + tvar + " stojí na stole a jedna láhev spadne");
+
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
