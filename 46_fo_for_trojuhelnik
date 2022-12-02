@@ -1,0 +1,22 @@
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Zadej velikost trojúhelníků");
+            int velikost = int.Parse(Console.ReadLine());
+
+            for (int radek = 0; radek < velikost; radek++)
+            {
+                for (int sloupec = 0; sloupec <= radek; sloupec++)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write("#");
+                    Console.Write(" ");
+                }
+                Console.WriteLine();
+            }
+        }
+    }
+}
