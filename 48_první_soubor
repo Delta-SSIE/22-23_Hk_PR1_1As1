@@ -1,0 +1,26 @@
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            using (StreamWriter fw = new StreamWriter(@"prvni.txt", true))
+            {
+                Console.WriteLine("Zapiš text pro uložení do souboru:");
+                fw.WriteLine(Console.ReadLine());
+                fw.Flush();
+            }
+
+            using (StreamReader fr = new StreamReader(@"prvni.txt"))
+            {
+                string s;
+                while ((s = fr.ReadLine()) !=null)
+                {
+                    Console.WriteLine(s);
+                    Console.ReadKey();
+                }
+            }
+  
+            Console.WriteLine("Konec programu práce se souborem");
+        }
+    }
