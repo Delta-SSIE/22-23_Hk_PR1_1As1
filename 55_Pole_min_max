@@ -1,0 +1,57 @@
+/*
+ZADÁNÍ NA 6.1.2023
+Napište program, který:
+1) vytvoří pole velikosti zadané uživatelem
+2) naplní pole náhodně vygenereovanými hodnotami v intervalu <-10; 10>
+3) Nalezne minimální a maximální hodnotu
+4) Určí na které pozici se nachází první výskyt minimální a maximáoní hodnoty
+5) Nalezne a vypíše všechny pozice, na kterých se nachází minimání a maximání hodnoty v daném poli
+
+*/
+
+
+//ŘEŠENÍ
+namespace _55_Min_v_poli
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Random generator = new Random();
+
+            Console.WriteLine("Zadej velikost pole");
+            int velikost = int.Parse(Console.ReadLine());
+
+            int[] cisla = new int[velikost];
+
+            for (int i = 0; i < velikost; i++)
+            {
+
+                cisla[i] = generator.Next(-10, 10);
+            }
+
+            for (int i = 0; i < velikost; i++)
+            {
+
+                Console.Write(cisla[i] + "; ");
+            }
+
+            int min = cisla[0];
+            int pozice = 1;
+
+
+            for (int i = 1; i < velikost; i++)
+            {
+
+                if (min > cisla[i])
+                {
+                    min = cisla[i];
+                    pozice = i + 1;
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Nejmenší hodnota v poli má hodnotu {min} a její první výskyt je na {pozice}. pozici");
+            Console.ReadKey();
+        }
+    }
+}
