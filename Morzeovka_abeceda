@@ -1,0 +1,11 @@
+// řetězec, který chceme dekódovat
+            string s = ".. ... .-.. .- -. -.. ... --- ..-. -";
+            Console.WriteLine("Původní zpráva: {0}", s);
+            // řetězec s dekódovanou zprávou
+            string zprava = "";
+
+            // vzorová pole
+            string abecedniZnaky = "abcdefghijklmnopqrstuvwxyz";
+            string[] morseovyZnaky = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
+            "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-",
+            "...-", ".--", "-..-", "-.--", "--.."};
