@@ -1,0 +1,16 @@
+Naprogramujte za pomoci OOP generátor náhodných vìt. Nechte ho vygenerovat 10 vìt a tyto vìty vypište do konzole.
+Svùj generátor vybavte následující slovní zásobou:
+* Podmìty: jednorožec, programátor, manažer, hroch, T-rex
+* Pøísudky: spal, ležel, vaøil, uklízel, derivoval
+* Pøívlastky: modrý, velký, hubený, nejlepší, automatizovaný
+* Pøíslovce: rychle, s oblibou, hodnì, málo, se zpoždìním
+* Pøísloveèná urèení místa: pod stolem, v lese, u 	babièky, v práci, na stole
+public string Generuj()
+        {
+            return string.Format("{0} {1} {2} {3} {4}", 
+                NahodneSlovo(privlastky), 
+                NahodneSlovo(podmety),
+                NahodneSlovo(prislovce), 
+                NahodneSlovo(slovesa), 
+                NahodneSlovo(pum)
+            );
