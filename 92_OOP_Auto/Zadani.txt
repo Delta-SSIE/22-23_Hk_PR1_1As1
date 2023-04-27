@@ -1,0 +1,11 @@
+Naprogramujte aplikaci, ve které figuruje auto a garáž. U auta evidujte SPZ a jeho barvu, u garáže evidujte jaké auto je v ní zaparkované (ne jen jeho SPZ, ale opravdu celé auto). Nechte auto s SPZ "123ABC" zaparkovat do garáže (pomocí jeho metody Zaparkuj()) a poté nechte vypsat garáž, která pøi svém výpisu vypíše i auto v ní zaparkované.
+
+
+static void Main(string[] args)
+        {
+            Garaz garaz = new Garaz();
+            Auto skoda = new Auto("123ABC", "modrá");
+            skoda.Zaparkuj(garaz);
+            Console.WriteLine(garaz);
+            Console.ReadKey();
+        }
