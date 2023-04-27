@@ -1,0 +1,22 @@
+Naprogramujte aplikaci, která obsluhuje èlovìka. Èlovìk má jméno a únavu, která je zpoèátku 0. Mùže ubìhnout urèitou vzdálenost a také spát urèitou dobu. Bìháním se jeho únava zvyšuje (1 jednotka únavy na 1 km), spaním se snižuje (10 jednotek únavy na 1 hodinu). Navrhnìte tøídu tak, aby se únava nikdy nemohla dostat z rozmezí 0-20 jednotek.
+Samozøejmì vám k tomu pomùže zapouzdøení, únava urèitì nebude veøejným atributem.
+Program vyzkoušíte tak, že necháte èlovìk 3x ubìhnout 10 km. Tøetí ubìhnutí by se nemìlo povést. Když èlovìka necháte po druhém ubìhnutí hodinu spát, zvládne i tøetí bìh.
+Na úvod vypište instanci èlovìka. Definujte mu metodu ToString() tak, aby se vypsalo jeho jméno a vìk.
+
+Clovek karel = new Clovek("Karel Nový", 25);
+            Console.WriteLine(karel);
+            karel.Behej(10);
+            karel.Behej(10);
+            karel.Spi(1);
+            karel.Behej(10);
+            Console.ReadKey();
+Pøekrývání metody ToString() 
+Seznámíme se s metodu, kterou budeme používat i ve vìtšinì našich dalších objektù. Jedná se o metodu ToString(),kterou obsahuje každý objekt. Metoda je urèena k tomu, aby vrátila tzv. textovou reprezentaci instance. Hodí se ve všech pøípadech, kdy si instanci potøebujeme vypsat nebo s ní pracovat jako s textem. Tuto metodu mají napø. i èísla. Již víme, že v C# funguje implicitní konverze, jakmile tedy budeme chtít do konzole vypsat èíslo nebo kterýkoli jiný objekt, C# na nìm zavolá metodu ToString() a vypíše její výstup. Pokud si dìláme vlastní tøídu, mìli bychom zvážit, zda se nám takováto metoda nehodí. 
+/// <summary>
+/// Vrátí textovou reprezentaci èlovìka
+/// </summary>
+/// <returns>textová reprezentace èlovìka</returns>
+        public override string ToString()
+        {
+            return string.Format("{0} ({1})", jmeno, vek);
+        }
