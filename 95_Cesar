@@ -1,6 +1,14 @@
-﻿namespace _95_Cesar
+/*
+Tento program nejprve načte text od uživatele a posun, který se má použít při šifrování. 
+Poté používá funkce Encrypt a Decrypt k zašifrování a dešifrování textu pomocí Cézarovy šifry. 
+Zašifrovaný a dešifrovaný text jsou vypsány na konzoli.
+Při použití Cézarovy šifry se písmena posunují o daný počet míst v abecedě. 
+Například s posunem 1 by písmeno 'A' bylo zašifrováno jako 'B', písmeno 'B' jako 'C' atd. 
+Pokud se posuneme na konci abecedy, pokračujeme znovu od začátku.
+*/
+namespace _95_Cesar
 {
-    using System;
+   using System;
 
     class Program
     {
